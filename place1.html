@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="default.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Mono:ital@1&display=swap');
+    </style>
+
+    <title>Teste</title>
+</head>
+
+<body>
+    <div class="bodyBlock" style="width: 100vw; height: 100vh;">
+        <img class="playerModel" src="https://cdn.discordapp.com/emojis/782062293239988235.png?size=96" alt="plr">
+        <img class="enemyBody" src="https://cdn.discordapp.com/emojis/570069894268190722.png?size=96" alt="enmy">
+        <div class="hpContainer">
+
+            <div class="playerLife">
+                <label for="playerLifeBar" style="font-family: 'Roboto Mono', 'Arial'; font-weight: bold;">You:</label>
+                <progress id="playerLifeBar" max="10" value="10"></progress>
+            </div>
+
+            <div class="enemyLife">
+                <label for="enemyLifeBar" style="font-family: 'Roboto Mono', 'Arial'; font-weight: bold;">Boss:</label>
+                <progress id="enemyLifeBar" max="10" value="10"></progress>
+            </div>
+
+
+        </div>
+        <div class="loseScreen">
+            <h1>YOU LOSE!</h1>
+            <h3>Boss life: <span class="remBossLife"></span></h3>
+        </div>
+        <div class="winScreen">
+            <h1>YOU WIN!</h1>
+            <h3>Congratulations!</h3>
+        </div>
+    </div>
+</body>
+<script src="handle.js"></script>
+
+</html>
